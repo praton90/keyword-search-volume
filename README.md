@@ -21,6 +21,22 @@ Please go through the following steps to run this app locally.
 - Access project directory. `cd keyword-search-volume`
 - Run the java app `mvn spring-boot:run`
 
+### Endpoint
+
+#### Request
+```
+METHOD: GET
+URL: http://localhost:8080/search-volume/samsung%20charger
+```
+
+#### Response
+```
+{
+ "keyword": "samsung charger",
+ "score": 16
+}
+```
+
 ## Running the tests
 
 - Execute `mvn test` 
